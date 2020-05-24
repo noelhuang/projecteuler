@@ -1,0 +1,19 @@
+# Fibonacci sequence
+
+# Initial values of the Fibonacci sequence (first three numbers of the Fibonacci sequence)
+Fnmin2 = 0
+Fnmin1 = 1
+Fn = 1
+
+# Then loop some code to get the Fibonacci sequence
+sumeven = 0  # We need a variable to be able to start summing
+while Fn < 4000000:  # Here the upper limit of the Fibonacci number is set
+    Fnmin2 = Fnmin1
+    Fnmin1 = Fn
+    Fn = Fnmin1 + Fnmin2  # Here we add the previous two values in the Fibonacci sequence to get the next value
+    if Fn % 2 == 0:
+        sumeven = sumeven + Fn
+    print(Fn)
+
+print("The sum of the even numbers is: ")
+print(sumeven)
