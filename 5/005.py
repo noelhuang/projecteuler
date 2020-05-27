@@ -1,7 +1,8 @@
 divflag = False
-
-for x in range(1000000000):
-    for y in range(1, 21):
+found = False
+x = 1
+while not found:
+    for y in range(1, 11):
         if x % y == 0:
             divflag = True
         else:
@@ -11,4 +12,7 @@ for x in range(1000000000):
     if divflag:
         if x != 0:
             print(x)
+            found = True
             break
+
+    x += 1
