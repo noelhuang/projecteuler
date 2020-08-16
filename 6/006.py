@@ -1,7 +1,6 @@
 sumsquare = 0
 for x in range(1, 101):
-    m = x * x
-    sumsquare = sumsquare + m
+    sumsquare = sumsquare + x * x
 
 
 n = 0
@@ -13,4 +12,4 @@ ans = squaresum - sumsquare
 print(ans)
 
 # oneliner
-print(sum(k for k in range(1, 101)) ** 2 - sum(l ** 2 for l in range(1,101)))
+print(sum(k for k in range(1, 101)) ** 2 - sum(l ** 2 for l in range(1, 101)))
