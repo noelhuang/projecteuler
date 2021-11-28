@@ -21,10 +21,10 @@ number = "73167176531330624919225119674426574742355349194934\
 05886116467109405077541002256983155200055935729725\
 71636269561882670428252483600823257530420752963450"
 
-adjacentnumbers = 13
+adjacentnumbers = 4
 largestnumber = 0
 for x in range(0, len(number) - adjacentnumbers):
-    y = prod([int(str(number)[i + x]) for i in range(adjacentnumbers)])
+    y = prod([int((number)[i + x]) for i in range(adjacentnumbers)])
     # n1 = str(number)[0+x]
     # n2 = str(number)[1+x]
     # n3 = str(number)[2+x]
