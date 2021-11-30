@@ -6,7 +6,7 @@ paths = []
 
 gridsize = 2
 
-for j in range(1, 1000):
+for j in range(1, 10000):
     for i in range(1, (2*gridsize)+1):
         num = random()
         if num > 0.5:
