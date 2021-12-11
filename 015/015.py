@@ -4,9 +4,9 @@ temppath = []
 
 paths = []
 
-gridsize = 2
+gridsize = 20
 
-for j in range(1, 1000):
+for j in range(1, 1000000):
     for i in range(1, (2*gridsize)+1):
         num = random()
         if num > 0.5:
